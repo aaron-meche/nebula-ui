@@ -1,0 +1,18 @@
+@font-face {
+    font-family: BaileyScript;
+    src: url('BaileyScript/BaileyScript.ttf');
+}
+
+:root{
+    --main: rgb(11, 1, 32);
+    --depth: #291c5f;
+
+    --accent: #883887;
+}
+
+body{
+    margin: 0;
+    background: var(--main);
+    color: white;
+    font-family: BaileyScript;
+}

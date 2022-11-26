@@ -1,0 +1,41 @@
+<style>
+    .navbar{
+        background: linear-gradient(90deg, var(--depth), var(--accent));
+        font-size: 0;
+    }
+
+    .navbar .title{
+        padding: 10pt;
+        font-size: 12pt;
+        font-weight: 600;
+        display: inline-block;
+        cursor: pointer;
+        color: rgb(239, 98, 255);
+    }
+
+    .navbar .item{
+        padding: 10pt;
+        font-size: 12pt;
+        display: inline-block;
+        cursor: pointer;
+        color: rgb(175 175 175);
+        border-bottom: solid 1pt rgb(0,0,0,0);
+        transition: color 300ms, border-bottom 300ms;
+    }
+
+    .navbar .item:hover{
+        color: white;
+        border-bottom: solid 1pt white;
+    }
+
+    .navbar .active{
+        color: white;
+    }
+</style>
+
+<div class="navbar">
+    <div class="title" onclick='link("index.html")'>{Page Title}</div>
+    <div class="item _description_" onclick='link("index.html")'>Description</div>
+    <div class="item _instructions_" onclick='link("instructions.html")'>Instructions</div>
+    <div class="item _implementation_" onclick='link("implementation.html")'>Implementation</div>
+</div>
