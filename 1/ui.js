@@ -19,6 +19,7 @@ boot: function() {
 
         request.innerHTML = moduleContentToImport;
     })
+    main()
 },
 
 fetch: function(url) {
